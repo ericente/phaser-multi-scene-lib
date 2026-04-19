@@ -63,7 +63,7 @@ export class AudioManager
     {
         if (this.currentVOClip && this.currentVOClip.removeAllListeners && this.currentVOClip.stop)
         {
-            this.currentVOClip.removeAllListeners('stop');
+            this.currentVOClip.removeAllListeners('complete');
             this.currentVOClip.stop();
             this.currentVOClip = null;
         }
